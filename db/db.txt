@@ -1,0 +1,14 @@
+User
+CREATE TABLE `3355393_registry`.`User` ( `user_id` INT(255) NOT NULL , `name` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL , UNIQUE (`user_id`)) ENGINE = MyISAM;
+
+Profile
+CREATE TABLE `3355393_registry`.`Profile` ( `user_id` INT(255) NOT NULL , `first_name` VARCHAR(255) NOT NULL , `last_name` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `headline` VARCHAR(255) NOT NULL , `summary` VARCHAR(255) NOT NULL , `profile_id` INT(255) NOT NULL AUTO_INCREMENT , UNIQUE (`profile_id`)) ENGINE = MyISAM;
+
+Position
+CREATE TABLE `3355393_registry`.`Position` ( `profile_id` INT(255) NOT NULL , `rank` INT(255) NOT NULL , `year` INT(255) NOT NULL , `description` VARCHAR(255) NOT NULL ) ENGINE = MyISAM;
+
+Institution
+CREATE TABLE `3355393_registry`.`Institution` ( `institution_id` INT(255) NOT NULL AUTO_INCREMENT , `rank` VARCHAR(255) NOT NULL , UNIQUE (`institution_id`)) ENGINE = MyISAM;
+
+Education
+CREATE TABLE `3355393_registry`.`Education` ( `profile_id` INT(255) NOT NULL , `rank` INT(255) NOT NULL , `year` INT(255) NOT NULL , `institution_id` INT(255) NOT NULL ) ENGINE = MyISAM;
