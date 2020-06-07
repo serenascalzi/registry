@@ -1,0 +1,253 @@
+/*
+Colors	Paper Source Colorscope: Clover, Luxe Grey, Red, Royal, Slate 
+Fonts	Google Fonts: Graduate, Open Sans
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	color: rgb(89,88,77);
+	background-color: rgba(221,221,223,0.25);
+	line-height: 2;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;	
+}
+
+header {
+	padding: 10px 0;
+}
+
+header h1 {
+	font-family: 'Graduate', cursive;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(50,112,181);
+}
+
+.section {
+	padding: 0 40px;
+}
+
+@media screen and (max-width: 600px) {
+	.section {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+.container {
+	max-width: 992px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.content-area {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sidebar {
+	text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+	.sidebar {
+		text-align: right;
+	}
+}
+
+.main-area {
+	float: right;
+	width: 66%;
+	padding-right: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.main-area {
+		padding: 0 40px;
+		border-left: 1px solid black;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.push-down-sm {
+		margin-bottom: 10px;
+	}
+}
+
+h2 {
+	font-size: 150%;
+}
+
+input, textarea {
+	margin: 5px 0;
+	padding: 5px;
+	border: 1px solid rgb(89,88,77);
+}
+
+.btn {
+	margin: 10px 5px 15px 0;
+	padding: 5px 10px;
+	font-size: 75%;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+	background-color: rgb(89,88,77);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgb(50,112,181);
+}
+
+.error {
+	color: rgb(204,65,60);
+}
+
+.success {
+	color: rgb(148,197,109);
+}
+
+.title {
+	text-decoration: underline;
+}
+
+a {
+	color: rgb(89,88,77);
+	text-decoration: none;
+}
+
+footer {
+	padding: 10px 0;
+	font-size: 90%;
+	text-align: center;	
+}
+
+/* Device Breakpoints */
+/*
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+/* End Device Breakpoints */
+
+/* Grid System */
+.row {
+	margin-right: -20px;
+}
+
+.col {
+	float: left;
+	width: 100%;
+	padding-right: 20px;
+}
+
+.col-xs-11 {width: 91.662%;}
+.col-xs-10 {width: 83.332%;}
+.col-xs-9 {width: 75%;}
+.col-xs-8 {width: 66.662%;}
+.col-xs-7 {width: 58.332%;}
+.col-xs-6 {width: 50%;}
+.col-xs-5 {width: 41.662%;}
+.col-xs-4 {width: 33.332%;}
+.col-xs-3 {width: 25%;}
+.col-xs-2 {width: 16.662%;}
+.col-xs-1 {width: 8.332%;}
+
+@media screen and (min-width: 768px) {
+	.row {
+		margin-right: -40px;
+	}
+
+	.col {
+		padding-right: 40px;
+	}
+
+	.col-sm-11 {width: 91.662%;}
+	.col-sm-10 {width: 83.332%;}
+	.col-sm-9 {width: 75%;}
+	.col-sm-8 {width: 66.662%;}
+	.col-sm-7 {width: 58.332%;}
+	.col-sm-6 {width: 50%;}
+	.col-sm-5 {width: 41.662%;}
+	.col-sm-4 {width: 33.332%;}
+	.col-sm-3 {width: 25%;}
+	.col-sm-2 {width: 16.662%;}
+	.col-sm-1 {width: 8.332%;}
+}
+
+@media screen and (min-width: 1024px) {
+	.col-md-11 {width: 91.662%;}
+	.col-md-10 {width: 83.332%;}
+	.col-md-9 {width: 75%;}
+	.col-md-8 {width: 66.662%;}
+	.col-md-7 {width: 58.332%;}
+	.col-md-6 {width: 50%;}
+	.col-md-5 {width: 41.662%;}
+	.col-md-4 {width: 33.332%;}
+	.col-md-3 {width: 25%;}
+	.col-md-2 {width: 16.662%;}
+	.col-md-1 {width: 8.332%;}
+}
+
+@media screen and (min-width: 1280px) {
+	.col-lg-11 {width: 91.662%;}
+	.col-lg-10 {width: 83.332%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-8 {width: 66.662%;}
+	.col-lg-7 {width: 58.332%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-5 {width: 41.662%;}
+	.col-lg-4 {width: 33.332%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-2 {width: 16.662%;}
+	.col-lg-1 {width: 8.332%;}
+}
+/* End Grid System */
+
+/* Clearfix Method */
+.fix {
+	clear: both;
+}
+
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.row:after,
+.group:after {
+	clear: both;
+}
+
+.row,
+.group {
+	zoom: 1;
+}
+/* End Clearfix Method */
